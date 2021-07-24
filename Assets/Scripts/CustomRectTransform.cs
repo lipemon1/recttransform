@@ -9,17 +9,15 @@ public static class CustomRectTransform
     
     public class CustomRect
     {
-        private bool _active;
+        private bool? _active;
         public RectTransform RectTransform;
 
-        public CustomRect(RectTransform rectTransform, bool value = true)
+        public CustomRect(RectTransform rectTransform, bool value)
         {
             RectTransform = rectTransform;
-
             _active = true;
-            SetActive(value);
 
-            rectTransform.gameObject.SetActive(true);
+            SetActive(value);
         }
 
         public void SetActive(bool value)
@@ -33,6 +31,9 @@ public static class CustomRectTransform
             Debug.Log("Changing rect value and pos");
             _active = value;
             RectTransform.anchoredPosition = value ? RectTransform.anchoredPosition - DISABLE_POS : RectTransform.anchoredPosition + DISABLE_POS;
+
+            if (RectTransform.gameObject.activeInHierarchy == false)
+                RectTransform.gameObject.SetActive(true);
         }
     }
 
