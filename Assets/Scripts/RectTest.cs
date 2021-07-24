@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class RectTest : MonoBehaviour
 {
-    public int IndexToChange;
     public bool Value;
-
-    [Space]
-    public List<RectTransform> rectTransforms = new List<RectTransform>();
+    public RectTransform Target;
 
     [ContextMenu("Toggle Object")]
     public void ToggleObject()
     {
-        rectTransforms[IndexToChange].ToggleUIObject(Value);
+        Target.ToggleUIObject(Value);
     }
 }
