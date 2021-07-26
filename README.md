@@ -1,8 +1,15 @@
 # Rect Transform Extension
-## _Lets gain some frames, or try at least_
+## _Lets gain some processing, or try at least_
 
-We are trying here to gain processimg time by moving RectTransforms out of screen
-Instead of enable and disable their game objects
+This script is for those who have performance issues enabling and disabling RectTransform.
+
+Here we are trying to save processing time and memory by moving those elements out of screen instead of disabling them.
+
+This change of place can change from project to project. But for now it is a static variable inside the CustomRectTransform.cs script with a value of -5000 for X and Y.
+
+```
+public static Vector2 DISABLE_POS = new Vector2(-5000f, -5000f);
+```
 
 ## Installation
 - If you want to download the raw script. Here it is (Mouse right click + "Save link as")
