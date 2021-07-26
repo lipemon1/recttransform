@@ -8,6 +8,19 @@ Instead of enable and disable their game objects
 - If you want to download the raw script. Here it is (Mouse right click + "Save link as")
 <a id="https://github.com/lipemon1/recttransform/blob/main/Assets/Scripts/CustomRectTransform.cs" href="https://raw.githubusercontent.com/lipemon1/recttransform/master/Assets/Scripts/CustomRectTransform.cs">CustomRectTransform.cs</a>
 
+## How to use
+The __CustomRectTransform.cs__ will create a new method on RectTransform, when you have a reference to one of it just use the code bellow:
+
+```
+RectTransform yourRectTransform = new RectTransform(); //just creating a RectTransform Reference
+
+// turning a RectTransform not visible
+yourRectTransform.ToggleUIObject(false);
+
+// turning a RectTransform visible
+yourRectTransform.ToggleUIObject(true);
+```
+
 ## What is does?
 - It will change the position of a RectTransform out of screen. (You can set this value)
 - If your object is disabled it will enable it for the first time. All objects will be enabled.
