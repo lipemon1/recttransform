@@ -1,11 +1,14 @@
 # Rect Transform Extension
 ## _Lets gain some frames, or try at least_
 
+<a id="https://github.com/lipemon1/recttransform/blob/main/Assets/Scripts/CustomRectTransform.cs" href="https://raw.githubusercontent.com/lipemon1/recttransform/master/Assets/Scripts/CustomRectTransform.cs">Download FILE</a>
+
 We are trying here to gain processimg time by moving RectTransforms out of screen
 Instead of enable and disable their game objects
 
 ## Installation
-- If you want to download the raw script. Here it is: [LINK HERE]
+- If you want to download the raw script. Here it is
+<a id="https://github.com/lipemon1/recttransform/blob/main/Assets/Scripts/CustomRectTransform.cs" href="https://raw.githubusercontent.com/lipemon1/recttransform/master/Assets/Scripts/CustomRectTransform.cs">CustomRectTransform.cs</a>
 
 ## What is does?
 - It will change the position of a RectTransform out of screen. (You can set this value)
